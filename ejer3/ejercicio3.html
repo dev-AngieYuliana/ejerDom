@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color del Botón</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cambiar el Color del Botón</h1>
+    <button id="colorButton" onclick="toggleButtonColor()">Haz clic para cambiar color</button>
+
+    <script>
+        function toggleButtonColor() {
+            const button = document.getElementById("colorButton");
+
+            // Cambiar entre azul y rojo
+            if (button.style.backgroundColor === "blue") {
+                button.style.backgroundColor = "red";
+            } else {
+                button.style.backgroundColor = "blue";
+            }
+        }
+    </script>
+</body>
+</html>

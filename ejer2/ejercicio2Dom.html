@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Clics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .counter {
+            font-size: 24px;
+            margin: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .click-btn {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .reset-btn {
+            background-color: #FF4D4D;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contador de Clics</h1>
+    <p class="counter" id="counter">Clics: 0</p>
+    <button class="click-btn" onclick="incrementCounter()">Haz clic</button>
+    <button class="reset-btn" onclick="resetCounter()">Reiniciar</button>
+
+    <script>
+        let count = 0;
+
+        function incrementCounter() {
+            count++;
+            document.getElementById("counter").textContent = `Clics: ${count}`;
+        }
+
+        function resetCounter() {
+            count = 0;
+            document.getElementById("counter").textContent = `Clics: ${count}`;
+        }
+    </script>
+</body>
+</html>
+
+
