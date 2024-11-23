@@ -29,13 +29,12 @@
 </head>
 <body>
     <h1>Cambiar el Color del Botón</h1>
-    <button id="colorButton" onclick="toggleButtonColor()">Haz clic para cambiar color</button>
+    <button id="colorButton" onclick="toggleButtonColor()">Cambiar color</button>
 
     <script>
         function toggleButtonColor() {
             const button = document.getElementById("colorButton");
 
-            // Cambiar entre azul y rojo
             if (button.style.backgroundColor === "blue") {
                 button.style.backgroundColor = "red";
             } else {
